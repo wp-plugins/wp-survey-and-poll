@@ -12,10 +12,27 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
 
 == Description ==
 
+[Demo](http://modalsurvey.sympies.com/) | [Pro Version - Modal Survey](http://sympies.com/modal-survey) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
+
  The surveys are deeply customizable, RGB color picker helps to create the design of the survey just as you imagined. The polls can automatically open as a modal window or it is possible to display it with clicking on a link or embed the survey to any page or post with shortcodes.
  Users' feedbacks are really important to make you WordPress website enjoyable for your visitors. WordPress Survey and Poll Plugin provides a wide variety of options to get any informations and display it with an impressive, animated graph. All polls are anonymous, doesn't need to log in to fill out, therefore the plugin using cookies to avoid duplications.
 
-== Features ==
+ = Cross Browser Compatible, Responsive =
+ WordPress Survey and Poll tested with Internet Explorer, Chrome, FireFox, Opera and Safari. Works well with tablets and mobiles, the survey always fit to the device screen to get the best visual display for the visitors.
+
+ = Visual Builder, Live Preview =
+ Offers a detailed admin panel to design your own survey easily with only few click. All polls and surveys can be test directly on the WordPress admin area before it going to live. Many customization options are available including font size, font family, padding, line-height and much more.
+ 
+ = More than 30 animation types with different positions =
+ The surveys can be placed at the top, middle or bottom of the page. Additional option to embed the survey directly into a page or post. 30+ animation types helps you to create really great, unique polls to impress your visitors.
+ 
+ = Parallax Effect =
+ WordPress Survey and Poll grant you an amazing fixed display on the frontend with a special scroll effect. In the most cases, the modal windows are display as a fixed position, the survey window slowly follows the scroll direction with a smooth animation.
+ 
+ = Lock Screen, Offer Download Link =
+ It is possible to easily lock the screen and force the users to fill out the survey or you can offer any link at the end of the survey. These features helps you to increase the number of filled surveys on your website.
+ 
+ == Features ==
 
 
 * Responsive, Mobile-Friendly
