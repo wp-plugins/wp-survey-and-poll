@@ -1,4 +1,4 @@
-=== WordPress Survey and Poll ===
+=== WordPress Survey & Poll ===
 Contributors: Pantherius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6H6YHMQG8JJ5J&lc=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: poll, survey, feedback, user voice, user satisfaction, marketing, questions, answers, wordpress quiz
