@@ -154,3 +154,13 @@
 	-moz-box-sizing: border-box;
 	transition: width 1.6s ease 0s;
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 100px)
+{
+	.survey_element
+	{
+		margin: 3px !important;
+		font-size: 12px !important;
+		padding: 3px !important;
+	}
+}
