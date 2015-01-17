@@ -34,7 +34,6 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  
  == Features ==
 
-
 * Responsive, Mobile-Friendly
 * Lock the screen, allow or disallow to close the survey
 * Compatible with all major browsers
