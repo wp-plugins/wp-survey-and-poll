@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) OR exit;
 if(!class_exists('wp_sap_settings'))
 {
 	class wp_sap_settings extends wp_sap
@@ -147,120 +148,125 @@ if(!class_exists('wp_sap_settings'))
 		
 		public function ajax_survey()
 		{
-		global $wpdb;
-		$survey_id = "";
-		$survey_name = "";
-		$survey_start_time = "";
-		$survey_expiry_time = "";
-		$survey_global = "";
-		if (isset($_REQUEST['survey_id'])) $survey_id = sanitize_text_field($_REQUEST['survey_id']);
-		else $survey_id = "";
-		if (isset($_REQUEST['survey_name'])) sanitize_text_field($survey_name = $_REQUEST['survey_name']);
-		else $survey_name = "";
-		if (isset($_REQUEST['start_time'])&&(!empty($_REQUEST['start_time']))) $survey_start_time = $this->get_datetime_date(sanitize_text_field($_REQUEST['start_time']));
-		else $survey_start_time = "";
-		if (isset($_REQUEST['expiry_time'])&&(!empty($_REQUEST['expiry_time']))) $survey_expiry_time = $this->get_datetime_date(sanitize_text_field($_REQUEST['expiry_time']));
-		else $survey_expiry_time = "";
-		if (isset($_REQUEST['global_use'])) $survey_global = sanitize_text_field($_REQUEST['global_use']);
-		else $survey_global = "";
-		if (isset($_REQUEST['options'])) $survey_options = sanitize_text_field($_REQUEST['options']);
-		else $survey_options = "";
-		if (isset($_REQUEST['qa'])) $survey_qa = sanitize_text_field($_REQUEST['qa']);
-		else $survey_qa = "";
-		$survey_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = ".$survey_id);
-		if ($_REQUEST['sspcmd']=="save")
-		{
-		if ($survey_check>0) {
-		//update survey
-			$wpdb->update( $wpdb->prefix."wp_sap_surveys", array( "options" => $survey_options, "start_time" => $survey_start_time, 'expiry_time' => $survey_expiry_time, 'global' => $survey_global),array('id' => $survey_id));
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_questions WHERE `survey_id` = %d",$survey_id));
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = %d",$survey_id));
-				$qa_object = (array)json_decode(stripslashes($survey_qa));
-				$qa_array = (array)$qa_object;
-				foreach($qa_array as $keyq=>$qr)
-				{
-					foreach($qr as $key=>$oa)
+			global $wpdb;
+			if( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) && ( $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' ) )
+			{
+			if(!current_user_can('manage_options')) die();
+			$survey_id = "";
+			$survey_name = "";
+			$survey_start_time = "";
+			$survey_expiry_time = "";
+			$survey_global = "";
+			if (isset($_REQUEST['survey_id'])) $survey_id = sanitize_text_field($_REQUEST['survey_id']);
+			else $survey_id = "";
+			if (isset($_REQUEST['survey_name'])) sanitize_text_field($survey_name = $_REQUEST['survey_name']);
+			else $survey_name = "";
+			if (isset($_REQUEST['start_time'])&&(!empty($_REQUEST['start_time']))) $survey_start_time = $this->get_datetime_date(sanitize_text_field($_REQUEST['start_time']));
+			else $survey_start_time = "";
+			if (isset($_REQUEST['expiry_time'])&&(!empty($_REQUEST['expiry_time']))) $survey_expiry_time = $this->get_datetime_date(sanitize_text_field($_REQUEST['expiry_time']));
+			else $survey_expiry_time = "";
+			if (isset($_REQUEST['global_use'])) $survey_global = sanitize_text_field($_REQUEST['global_use']);
+			else $survey_global = "";
+			if (isset($_REQUEST['options'])) $survey_options = sanitize_text_field($_REQUEST['options']);
+			else $survey_options = "";
+			if (isset($_REQUEST['qa'])) $survey_qa = sanitize_text_field($_REQUEST['qa']);
+			else $survey_qa = "";
+			$survey_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = ".$survey_id);
+			if ($_REQUEST['sspcmd']=="save")
+			{
+			if ($survey_check>0) {
+			//update survey
+				$wpdb->update( $wpdb->prefix."wp_sap_surveys", array( "options" => $survey_options, "start_time" => $survey_start_time, 'expiry_time' => $survey_expiry_time, 'global' => $survey_global),array('id' => $survey_id));
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_questions WHERE `survey_id` = %d",$survey_id));
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = %d",$survey_id));
+					$qa_object = (array)json_decode(stripslashes($survey_qa));
+					$qa_array = (array)$qa_object;
+					foreach($qa_array as $keyq=>$qr)
 					{
-						if ($key==0)
+						foreach($qr as $key=>$oa)
 						{
-						$wpdb->insert( $wpdb->prefix."wp_sap_questions", array( 
-							'id' => ($keyq+1), 
-							'survey_id' => $survey_id, 
-							'question' => $oa
-							) );
-							$qid = $wpdb->insert_id;
+							if ($key==0)
+							{
+							$wpdb->insert( $wpdb->prefix."wp_sap_questions", array( 
+								'id' => ($keyq+1), 
+								'survey_id' => $survey_id, 
+								'question' => $oa
+								) );
+								$qid = $wpdb->insert_id;
+							}
+							else
+							{
+							$oans = explode("->",$oa);
+							$wpdb->insert( $wpdb->prefix."wp_sap_answers", array( 
+								'survey_id' => $survey_id, 
+								'question_id' => ($keyq+1),
+								'answer' => $oans[0],
+								'count' => $oans[1],
+								'autoid' => $key
+								) );					
+							}
+						
 						}
-						else
-						{
-						$oans = explode("->",$oa);
-						$wpdb->insert( $wpdb->prefix."wp_sap_answers", array( 
-							'survey_id' => $survey_id, 
-							'question_id' => ($keyq+1),
-							'answer' => $oans[0],
-							'count' => $oans[1],
-							'autoid' => $key
-							) );					
-						}
-					
 					}
-				}
-			die("updated");
-		}
-		else {
-		//insert survey
-			$wpdb->insert( $wpdb->prefix."wp_sap_surveys", array( 
-				'id' => $survey_id, 
-				'name' => $survey_name, 
-				'options' => $survey_options, 
-				'start_time' => $survey_start_time,
-				'expiry_time'=> $survey_expiry_time,
-				'global'=> $survey_global
-				) );
-				$qa_object = (array)json_decode(stripslashes($survey_qa));
-				$qa_array = (array)$qa_object;
-				foreach($qa_array as $keyq=>$qr)
-				{
-					foreach($qr as $key=>$oa)
+				die("updated");
+			}
+			else {
+			//insert survey
+				$wpdb->insert( $wpdb->prefix."wp_sap_surveys", array( 
+					'id' => $survey_id, 
+					'name' => $survey_name, 
+					'options' => $survey_options, 
+					'start_time' => $survey_start_time,
+					'expiry_time'=> $survey_expiry_time,
+					'global'=> $survey_global
+					) );
+					$qa_object = (array)json_decode(stripslashes($survey_qa));
+					$qa_array = (array)$qa_object;
+					foreach($qa_array as $keyq=>$qr)
 					{
-						if ($key==0)
+						foreach($qr as $key=>$oa)
 						{
-						$wpdb->insert( $wpdb->prefix."wp_sap_questions", array( 
-							'id' => ($keyq+1), 
-							'survey_id' => $survey_id, 
-							'question' => $oa
-							) );
-							$qid = $wpdb->insert_id;
+							if ($key==0)
+							{
+							$wpdb->insert( $wpdb->prefix."wp_sap_questions", array( 
+								'id' => ($keyq+1), 
+								'survey_id' => $survey_id, 
+								'question' => $oa
+								) );
+								$qid = $wpdb->insert_id;
+							}
+							else
+							{
+							$oans = explode("->",$oa);
+							$wpdb->insert( $wpdb->prefix."wp_sap_answers", array( 
+								'survey_id' => $survey_id, 
+								'question_id' => ($keyq+1),
+								'answer' => $oans[0],
+								'autoid' => $key
+								) );					
+							}
+						
 						}
-						else
-						{
-						$oans = explode("->",$oa);
-						$wpdb->insert( $wpdb->prefix."wp_sap_answers", array( 
-							'survey_id' => $survey_id, 
-							'question_id' => ($keyq+1),
-							'answer' => $oans[0],
-							'autoid' => $key
-							) );					
-						}
-					
 					}
-				}
-			die('success');
-		}
-		}
-		elseif($_REQUEST['sspcmd']=="delete")
-		{
-		if ($survey_check>0) {
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = %d",$survey_id));
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_questions WHERE `survey_id` = %d",$survey_id));
-			$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = %d",$survey_id));
-			die("deleted");
-		}
-		}
-		elseif($_REQUEST['sspcmd']=="reset")
-		{
-		$wpdb->update( $wpdb->prefix."wp_sap_answers", array( "count" => "0"),array('survey_id' => $survey_id));
-			die("reset");
-		}
+				die('success');
+			}
+			}
+			elseif($_REQUEST['sspcmd']=="delete")
+			{
+			if ($survey_check>0) {
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = %d",$survey_id));
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_questions WHERE `survey_id` = %d",$survey_id));
+				$wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = %d",$survey_id));
+				die("deleted");
+			}
+			}
+			elseif($_REQUEST['sspcmd']=="reset")
+			{
+			$wpdb->update( $wpdb->prefix."wp_sap_answers", array( "count" => "0"),array('survey_id' => $survey_id));
+				die("reset");
+			}
+			}
+			else die();
 		}
 	}
 }

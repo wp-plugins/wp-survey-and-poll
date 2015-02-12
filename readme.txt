@@ -97,5 +97,8 @@ Initial Release
 
 == Changelog ==
 
+= 1.2 =
+* Fixed SQL security issue
+
 = 1.0 =
 * First Release
