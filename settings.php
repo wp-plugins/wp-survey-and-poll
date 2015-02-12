@@ -92,7 +92,7 @@ if(!class_exists('wp_sap_settings'))
 		global $wpdb;
 			if (isset($_REQUEST['options'])) {$opt = json_decode(stripslashes($_REQUEST['options']));$options = (array)$opt[0];}
 			else $options = array();
-			$current_count = $wpdb->get_var("SELECT `count` FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = '".$options['sid']."' AND `question_id` = '".$options['qid']."' AND `autoid` = '".$options['aid']."'");
+			$current_count = $wpdb->get_var($wpdb->prepare("SELECT `count` FROM ".$wpdb->prefix."wp_sap_answers WHERE `survey_id` = %d AND `question_id` = %d AND `autoid` = %d",$options['sid'],$options['qid'],$options['aid']));
 			$wpdb->update( $wpdb->prefix."wp_sap_answers", array( "count" => $current_count+1),array('survey_id' => $options['sid'],'question_id' => $options['qid'],'autoid' => $options['aid']));
 			if ($options['aid']==1)
 			{
@@ -171,7 +171,7 @@ if(!class_exists('wp_sap_settings'))
 			else $survey_options = "";
 			if (isset($_REQUEST['qa'])) $survey_qa = sanitize_text_field($_REQUEST['qa']);
 			else $survey_qa = "";
-			$survey_check = $wpdb->get_var("SELECT COUNT(*) FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = ".$survey_id);
+			$survey_check = $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM ".$wpdb->prefix."wp_sap_surveys WHERE `id` = %d",$survey_id));
 			if ($_REQUEST['sspcmd']=="save")
 			{
 			if ($survey_check>0) {
