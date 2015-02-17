@@ -97,6 +97,9 @@ Initial Release
 
 == Changelog ==
 
+= 1.2.02 =
+* Improved Admin display
+
 = 1.2 =
 * Fixed SQL security issue
 

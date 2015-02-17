@@ -51,6 +51,7 @@ if(!class_exists('wp_sap_settings'))
 			wp_register_script('wp_sap_admin', plugins_url( '/templates/assets/js/wp_sap_admin.js' , __FILE__ ) , array('jquery','jquery-ui-core','jquery-effects-core','jquery-ui-datepicker','wp_sap_timepicker_script'),'100018', false);
 			wp_localize_script( 'wp_sap_admin', 'sspa_params', array( 'plugin_url'=>plugins_url( '' , __FILE__ ), 'admin_url'=>admin_url( 'admin-ajax.php')));
 			wp_enqueue_script( 'wp_sap_admin' );
+			wp_enqueue_script('wsap_acustom', plugins_url( '/templates/assets/js/acustom.js' , __FILE__ ) , array('jquery'),'100017', true);
 		}
 		/**
 		* initialize datas on wp admin

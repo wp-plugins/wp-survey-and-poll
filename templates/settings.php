@@ -2,6 +2,7 @@
 	<div class="wrap" style="visibility:hidden">
 	<br /><br />
 	<h3>WordPress Survey & Poll<hr /></h3>
+	<?php if (!isset($_REQUEST['settings-updated'])) require_once(sprintf("%s/acustom.php", dirname(__FILE__)));?>
 	<?php
 	/*
 	if (isset($this->action_result)) {?>

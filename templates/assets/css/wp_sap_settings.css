@@ -1,5 +1,11 @@
+@import url("acustom.css");
 .settings_page_wp_sap .wrap .form-table th {
 	width: 400px;
+}
+
+#wpcontent
+{
+	background: #fff !important;
 }
 
 .settings_page_wp_sap .wrap hr { 
@@ -22,7 +28,6 @@
 
 .settings_page_wp_sap .wrap h2 {
 	font-family: Arial, serif;
-	text-shadow: 4px 4px 4px #aaa;
 	text-align: left;
 	font-size: 20px;
 	font-weight: bold;
