@@ -29,8 +29,8 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  = Parallax Effect =
  WordPress Survey and Poll grant you an amazing fixed display on the frontend with a special scroll effect. In the most cases, the modal windows are display as a fixed position, the survey window slowly follows the scroll direction with a smooth animation.
  
- = Lock Screen, Offer Download Link =
- It is possible to easily lock the screen and force the users to fill out the survey or you can offer any link at the end of the survey. These features helps you to increase the number of filled surveys on your website.
+ = Lock the Screen =
+ It is possible to easily lock the screen and force the users to fill out the survey for unlocking the content. This feature helps you to increase the number of filled surveys on your website.
  
  == Features ==
 
@@ -42,9 +42,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
 * Visual Builder on Admin with Live Preview
 * Parallax Effect on the Surveys during Scrolling the Page
 * Specify the Start Times and Expiry Times
-* Different Unique Styles (Modal, Flat, Open with Link)
 * Gradient RGB Color Picker
-* Ability to Display Link at the end of the Survey (Force Users to Fill Out to get the Link)
 * Unlimited Surveys, Reset Counters with One-Click
 * Ability to Lock the Screen
 * Different Positions
