@@ -155,7 +155,7 @@ jQuery(window).load(function() {
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_border_radius_value" ).val( "Border Radius: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
-			}
+				surveysystem("#survey .survey_answers").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
 			});
 	})
 
@@ -202,6 +202,7 @@ jQuery(window).load(function() {
 	var cutc = cutcolor[1].split(" , rgb");
 	cdir = cutc[0];
 	}
+	if (cdir==undefined) cdir = 'center , circle cover';
 	var gradxcolors = [];
 	for (key in rcolors) {
     if (arrayHasOwnIndex(rcolors, key)) {
@@ -221,8 +222,8 @@ jQuery(window).load(function() {
 				sliders: gradxcolors
             });
 		})
+	surveysystem("#survey .survey_row").css('background', '');
 	})
-	
 	surveysystem("#wp_sap_accordion .wp_sap_preview1002").each(function( index ) {
 	var survey_id = surveysystem(this).parent().parent().parent().attr("id");
 		surveysystem("#"+survey_id+" .wp_sap_preview1002").spectrum({
@@ -291,7 +292,7 @@ jQuery(window).load(function() {
 
 	
 	function arrayHasOwnIndex(array, prop) {
-		return array.hasOwnProperty(prop) && /^0$|^[1-9]\d*$/.test(prop) && prop <= 4294967294; // 2^32 - 2
+		if (array!=null) return array.hasOwnProperty(prop) && /^0$|^[1-9]\d*$/.test(prop) && prop <= 4294967294; // 2^32 - 2
 	}	
 
  	surveysystem("body").on( "click", "#close_survey, #bglock",function() {
@@ -376,6 +377,7 @@ jQuery(window).load(function() {
 		if (!surveysystem("link[href='http://fonts.googleapis.com/css?family="+surveysystem('#'+active_survey+' .font_family').val()+"']").length) surveysystem('head').append('<link rel="stylesheet" href="http://fonts.googleapis.com/css?family='+surveysystem('#'+active_survey+' .font_family').val()+'" type="text/css" />');
 		surveysystem("#survey .survey_element").css("font-family",surveysystem('#'+active_survey+' .font_family').val()+", serif");
     }
+	surveysystem("#survey .survey_row").css('background', '');
 	//make animation
 	if (surveysystem('#'+active_survey+' .display_style').val()=="bottom") {
 	surveysystem("#survey").css("bottom","-"+parseInt(surveysystem("#survey").height()+100)+"px");
