@@ -33,7 +33,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  It is possible to easily lock the screen and force the users to fill out the survey for unlocking the content. This feature helps you to increase the number of filled surveys on your website.
 
  = Pro Version Features ==
- [Modal Survey for WordPress](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks.
+ [Modal Survey for WordPress](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
  
  == Features ==
 
@@ -90,6 +90,10 @@ Yes, you can create unlimited surveys.
 = How many questions can I add? =
 
 Free version offers one question per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+
+= How can I export the survey? =
+
+You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
 
 == Upgrade Notice ==
 
