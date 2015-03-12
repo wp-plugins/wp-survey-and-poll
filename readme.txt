@@ -32,7 +32,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  = Lock the Screen =
  It is possible to easily lock the screen and force the users to fill out the survey for unlocking the content. This feature helps you to increase the number of filled surveys on your website.
 
- = Pro Version Features ==
+ = Pro Version Features =
  [Modal Survey for WordPress](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
  
  == Features ==
