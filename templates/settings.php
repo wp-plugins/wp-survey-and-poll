@@ -1724,7 +1724,7 @@
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>The answer counts will be permanently deleted and cannot be recovered. Are you sure to reset?</p>
 </div>
 	<div id="dialog-confirm3" title="Unlimited Questions?">
-  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to one question per survey. To add unlimited questions, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to two questions per survey. To add unlimited questions, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
 </div>
 	<div id="dialog-confirm4" title="Unlimited Answers?">
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to three answers per question. To add unlimited answers, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>

@@ -33,7 +33,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  It is possible to easily lock the screen and force the users to fill out the survey for unlocking the content. This feature helps you to increase the number of filled surveys on your website.
 
  = Pro Version Features =
- [Modal Survey for WordPress](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
+ [Modal Survey for WordPress](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. Display the results simply with __Plain Text__, __Progress Bar__, __Line Bar__, __Pie Chart__, __Bar Chart__, __Doughnut Chart__, __Line Chart__, __Polar Chart__ and __Radar Chart__ formats. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
  
  == Features ==
 
@@ -51,7 +51,6 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
 * Different Positions
 * Specify your own text at the end
 * Custom animations with Full Range of jQuery Easing Effects
-* Animated Charts for the Results
 * Ability to set the Survey on the entire Website or include it to the Specified Page / Post
 * Set it to Closeable by the Users or Force to Fill Out
 * Display the Surveys only when the Users Scrolled Down to the Bottom of the Page
@@ -89,7 +88,7 @@ Yes, you can create unlimited surveys.
 
 = How many questions can I add? =
 
-Free version offers one question per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+Free version offers two questions per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
 
 = How can I export the survey? =
 

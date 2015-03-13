@@ -156,7 +156,8 @@ jQuery(window).load(function() {
 				surveysystem( "#"+survey_id+" .wp_sap_border_radius_value" ).val( "Border Radius: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
 				surveysystem("#survey .survey_answers").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
-			});
+			}
+	})
 	})
 
 	surveysystem("#wp_sap_accordion .wp_sap_animation_speed").each(function( index ) {
@@ -718,7 +719,22 @@ function initialize_question_accordions(survey_id)
 	surveysystem("#answer_element_"+answer_area.replace("answers_","")+"_"+answer_num+" input").focus();
 	});
   	surveysystem("body").on( "click", ".add_question",function() {
-		surveysystem( "#dialog-confirm3" ).dialog( "open" );
+		var answer_area = surveysystem(this).parent().parent().attr("id");
+		var question_num = (surveysystem("#"+answer_area+" .question_text").length+1);
+		if (question_num>2) {
+			surveysystem( "#dialog-confirm3" ).dialog( "open" );
+			return;
+		}
+		surveysystem("#"+answer_area+" #new_questions").append('<div class="group"><h3>'+question_num+'. question</h3><div class="one_question" id="question_section'+question_num+'"><div class="left_half"><div id="question_'+question_num+'" class="questions_block"><p>Question:&nbsp; <textarea name="question[]" id="question'+question_num+'" style="width: 75%;" class="question_text"></textarea><a class="add_question"><img class="remove_question modal_survey_tooltip" title="Remove Question" id="remove_question_'+answer_area+'_'+question_num+'" src="'+sspa_params.plugin_url+'/templates/assets/img/delete.png"></a></p><span><p>1. answer: <input type="text" name="answer[]" class="answer" id="answer1" style="width: 50%;" value="Yes" placeholder="Yes" /><span id="answer_count1" class="answer_count">0 - 0%</span></p><p>2. answer: <input type="text" name="answer[]" class="answer" id="answer2" style="width: 50%;" value="No" placeholder="No" /><span id="answer_count2" class="answer_count">0 - 0%</span><a class="add_answer"><img class="modal_survey_tooltip" title="Add New Answer" src="'+sspa_params.plugin_url+'/templates/assets/img/add.png"></a></p></span></div></div><div id="chart'+question_num+'" class="right_half"></div></div>');
+		surveysystem("#"+answer_area+" #chart"+question_num).html('<canvas id="modal_survey_pro_graph_'+answer_area+'_'+question_num+'" class="canvas_graph" height="250" width="250"></canvas>');
+		surveysystem("#"+answer_area+" .left_half "+"#question_"+question_num+">span").attr("id","answers_"+answer_area);
+		create_graph(answer_area,question_num,"true");
+		surveysystem( "#"+answer_area+" #new_questions" ).accordion("refresh" );
+		surveysystem( "#"+answer_area+" #new_questions" ).accordion({ active: question_num-1 });
+		var demo_questions = ["Was this information helpful?","Do you like this website?","Did you find this website easily?","Did you find this website through Search Engine?","Did you already bookmark this website?","Do you like this survey?","Do you visit this website first time?","Are you employed?"];
+		initialize_tooltips();
+		surveysystem("#"+answer_area+" #question"+question_num).val(demo_questions[Math.floor(Math.random() * demo_questions.length)]);
+		surveysystem("#"+answer_area+" #question"+question_num).select();
 	});
   	surveysystem("body").on( "click", ".remove_answer",function() {
 	var remove_id = surveysystem(this).attr("id");
