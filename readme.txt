@@ -12,7 +12,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
 
 == Description ==
 
-[Demo](http://modalsurvey.sympies.com/) | [Pro Version - Modal Survey](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
+[Demo](http://modalsurvey.pantherius.com) | [Pro Version - Modal Survey](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
 
  The surveys are deeply customizable, RGB color picker helps to create the design of the survey just as you imagined. The polls can automatically open as a modal window or it is possible to display it with clicking on a link or embed the survey to any page or post with shortcodes.
  Users' feedbacks are really important to make you WordPress website enjoyable for your visitors. WordPress Survey and Poll Plugin provides a wide variety of options to get any informations and display it with an impressive, animated graph. All polls are anonymous, doesn't need to log in to fill out, therefore the plugin using cookies to avoid duplications.
@@ -33,7 +33,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
  It is possible to easily lock the screen and force the users to fill out the survey for unlocking the content. This feature helps you to increase the number of filled surveys on your website.
 
  = Pro Version Features =
- [Modal Survey for WordPress](http://sympies.com/modal-survey) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. Display the results simply with __Plain Text__, __Progress Bar__, __Line Bar__, __Pie Chart__, __Bar Chart__, __Doughnut Chart__, __Line Chart__, __Polar Chart__ and __Radar Chart__ formats. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
+ [Modal Survey for WordPress](http://pantherius.com/modal-survey) is a Premium WordPress Plugin to get your visitors feedback via a professional, attention-grabber poll. Provides unlimited surveys, questions and answers with embedding option. Various animations and Visual Builder helps you to design your own styled survey that perfectly fits to your website. Display the results simply with __Plain Text__, __Progress Bar__, __Line Bar__, __Pie Chart__, __Bar Chart__, __Doughnut Chart__, __Line Chart__, __Polar Chart__ and __Radar Chart__ formats. The integrated Shortcode Manager ensures you can quickly include the survey's results to any page or post with only few clicks. __Export__ your survey to __PDF__, __XLS__, __CSV__, __JSON__ and __XML__ 
  
  == Features ==
 

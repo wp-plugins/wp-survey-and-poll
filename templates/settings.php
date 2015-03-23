@@ -1561,7 +1561,7 @@
 			<h3 style="text-align: center;">Modal Survey - WordPress Feedbacks & Polls Plugin<br /><hr /></h3>
 			<div style="width: 590px;display: inline-block;vertical-align: top;">
 			<p style="text-align: center; display: inline-block;">
-			<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img src="http://sympies.com/static/modal_survey/preview.jpg"></a>
+			<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img src="http://static.pantherius.com/modal-survey/preview.jpg"></a>
 			</p>
 			<div style="display: inline-block">
 			<h3 style="text-align: center;">Key Features</h3>
@@ -1591,13 +1591,13 @@
 			</div>
 			</div>
 			<div style="display:inline-block;width: 400px;">
-				<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img style="width:100%;" src="http://sympies.com/static/modal_survey/cc_promo_image.png"></a>
+				<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img style="width:100%;" src="http://static.pantherius.com/modal-survey/cc_promo_image.png"></a>
 			</div>
 	</div>
 	<div id="plugin_directory">
 		<p>
 			<p>    
-			<?php print(file_get_contents("http://sympies.com/static/plugin_directory.html")); ?>
+			<?php print(file_get_contents("http://pantherius.com/static/plugin_directory.html")); ?>
 			</p>
 		</p>
 

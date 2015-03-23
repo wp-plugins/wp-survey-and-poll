@@ -2,11 +2,11 @@
 defined( 'ABSPATH' ) OR exit;
 /**
  * Plugin Name: WordPress Survey and Poll
- * Plugin URI: http://sympies.com/modal-survey
+ * Plugin URI: http://pantherius.com/modal-survey
  * Description: Add simple surveys to your website
  * Author: Pantherius
- * Version: 1.2.1
- * Author URI: http://sympies.com
+ * Version: 1.2.2
+ * Author URI: http://pantherius.com
  */
  
 if(!class_exists('wp_sap'))
