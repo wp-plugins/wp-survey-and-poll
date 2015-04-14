@@ -742,7 +742,7 @@
 			<div class="wp_sap_checkbox"><label class="text wp_sap_tooltip" title="The survey will appear when the user scrolled down at the bottom of the page" style="width: 200px;"><input type="checkbox" name="atbottom" class="inputtext atbottom" value="0" /> Display at bottom</label></div>
 			</fieldset>
 			<div style="clear:both;"></div>
-			<div><a class="add_question">[add new question]</a></div>
+			<div class="form-area"><a class="add_question button button-primary button-small">Add New Question</a></div>
 			<div style="clear:both;"></div>
 			<input type="hidden" name="survey_id" value="" />
 		<div id="new_questions">
@@ -1510,7 +1510,7 @@
 			<div class="wp_sap_checkbox"><label class="text wp_sap_tooltip" title="The survey will appear when the user scrolled down at the bottom of the page" style="width: 200px;"><input type="checkbox" name="atbottom" '.$opt_15.' class="inputtext atbottom" value="'.$options[15].'" /> Display at bottom</label></div>
 			</fieldset>
 			<div style="clear:both;"></div>
-			<div><a class="add_question">[add new question]</a></div>
+			<div class="form-area"><a class="add_question button button-primary button-small">Add New Question</a></div>
 			<div style="clear:both;"></div>
 			<input type="hidden" name="survey_id" value="" />
 		<div id="new_questions">');

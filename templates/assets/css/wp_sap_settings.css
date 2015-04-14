@@ -81,7 +81,7 @@
 #wp_sap_accordion fieldset
 {
 	border: 1px solid #AAAAAA;
-	padding: 0px;
+	padding: 20px 0px;
 	width: 100%;
 }
  
@@ -159,6 +159,10 @@
 .ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
 .ui-timepicker-rtl dl dt{ float: right; clear: right; }
 .ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+.form-area .add_question {
+	margin: 10px;
+}
 
 .remove_answer, .add_answer, .add_question
 {
