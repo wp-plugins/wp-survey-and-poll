@@ -101,14 +101,14 @@ Initial Release
 
 == Changelog ==
 
+= 1.2.3 =
+* Improved Admin Area
+
 = 1.2.02 =
 * Improved Admin display
 
 = 1.2 =
 * Fixed SQL security issue
-
-= 1.2.3 =
-* Improved Admin
 
 = 1.0 =
 * First Release
