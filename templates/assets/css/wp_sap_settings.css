@@ -100,7 +100,11 @@
 	width: 280px !important;
 }
 
-#add_new_survey, .save_survey, .reset_survey
+#add_new_survey {
+	margin: 2px;
+}
+
+.save_survey, .reset_survey
 {
 	margin-left: 10px !important;
 }

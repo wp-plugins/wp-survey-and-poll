@@ -19,7 +19,7 @@
 		</ul>
 	<div id="gradX" ></div>
 	<div id="wp_sap_settings">
-	<input type="text" id="survey_name" value="" size="50" placeholder="Type your survey name here" /><a id="add_new_survey" class="button">New Survey</a><span id="error_log"></span>
+	<input type="text" id="survey_name" value="" size="50" placeholder="Type the survey name here" /><a id="add_new_survey" class="button button-small button-primary">New Survey</a><span id="error_log"></span>
 	<div style="display:none;" id="new_survey_content">
 	  <h3 class="accordion_survey_header">Section 1</h3>
 	  <div>
