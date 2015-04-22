@@ -88,7 +88,7 @@ Yes, you can create unlimited surveys.
 
 = How many questions can I add? =
 
-Free version offers two questions per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+Free version offers limited questions per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
 
 = How can I export the survey? =
 

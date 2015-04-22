@@ -721,7 +721,7 @@ function initialize_question_accordions(survey_id)
   	surveysystem("body").on( "click", ".add_question",function() {
 		var answer_area = surveysystem(this).parent().parent().attr("id");
 		var question_num = (surveysystem("#"+answer_area+" .question_text").length+1);
-		if (question_num>2) {
+		if (question_num>5) {
 			surveysystem( "#dialog-confirm3" ).dialog( "open" );
 			return;
 		}
