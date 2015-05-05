@@ -10,7 +10,7 @@ print('
 			<li>- Display the Results with <strong>Plain Text</strong>, <strong>Progress Bar</strong>, <strong>Line Bar</strong>, <strong>Pie Chart</strong>, <strong>Bar Chart</strong>, <strong>Doughnut Chart</strong>, <strong>Line Chart</strong>, <strong>Polar Chart</strong> and <strong>Radar Chart</strong></li>
 			<li>- Export the survey to <strong>PDF</strong>, <strong>XML</strong>, <strong>CSV</strong>, <strong>XLS</strong> and <strong>JSON</strong></li>
 			<li>- <strong>Import Survey</strong>, <strong>Duplicate</strong> Survey, Offer link at the end</li>
-			<li>- Allows <strong>Multiple Choices</strong> (required and choosable number of answers)</li>
+			<li>- Allows <strong>Multiple Choices</strong> (required and choosable number of answers), Restrict to Logged-in users only</li>
 			<li>- Integrated <strong>Shortcode Manager</strong>, add survey or results shortcodes to text <strong>widget</strong></li>
 			<li>- Hide the bottom line \'Powered By\' text, Premium <strong>Support and Updates</strong></li>
 		</ul>
