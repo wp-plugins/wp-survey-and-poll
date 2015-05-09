@@ -87,7 +87,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_line_height_value" ).val( "Line Height: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("line-height",ui.value + "px");
@@ -103,7 +103,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 6,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_font_size_value" ).val( "Font Size: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("font-size",ui.value + "px");
@@ -119,7 +119,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_padding_value" ).val( "Padding: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("padding",ui.value + "px");
@@ -135,7 +135,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 200,
+			max: 20,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_border_width_value" ).val( "Border Width: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border",ui.value+"px solid "+surveysystem("#"+survey_id+" .wp_sap_preview1003").css("background-color"));
@@ -151,7 +151,7 @@ jQuery(window).load(function() {
 			range: "min",
 			value: thisvalue,
 			min: 0,
-			max: 200,
+			max: 100,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_border_radius_value" ).val( "Border Radius: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
@@ -169,7 +169,7 @@ jQuery(window).load(function() {
 			step: 0.1,
 			value: thisvalue,
 			min: 0.1,
-			max: 60,
+			max: 5,
 			slide: function( event, ui ) {
 			jQuery( "#"+survey_id+" .wp_sap_animation_speed_value" ).val( "Animation Speed: "+ui.value + "sec" );
 			}
