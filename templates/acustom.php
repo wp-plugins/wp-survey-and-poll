@@ -15,7 +15,6 @@ print('
 			<li>- Hide the bottom line \'Powered By\' text, Premium <strong>Support and Updates</strong></li>
 		</ul>
 		<a class="close button button-default" href="#">Use Free Version</a>
-		<a class="close button button-default" href="#">Use Free Version</a>
 		<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">Purchase PRO Version - $17</a>
 	 </div>
 </div>

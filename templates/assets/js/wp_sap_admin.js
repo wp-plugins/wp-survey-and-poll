@@ -332,10 +332,8 @@ jQuery(window).load(function() {
 	surveysystem("#survey").css("top","");
 	surveysystem("#survey").css("bottom","");
 	surveysystem("#survey").css("left","0px");
-	if (surveysystem('#'+active_survey+' .closeable').val()==1) {
 		if (surveysystem('#'+active_survey+' .display_style').val()=="top") remove_image = "<img id='close_survey' class='cl_top_survey' src='"+sspa_params.plugin_url+"/templates/assets/img/remove.png' />";
 		else remove_image = "<img id='close_survey' class='cl_survey' src='"+sspa_params.plugin_url+"/templates/assets/img/remove.png' />";
-	}
 	if (surveysystem("#"+active_survey+" #new_questions .one_question").length>=played_question)
 	{
 	survey_content += '<div class="survey_table"><div class="survey_element survey_question">'+remove_image+''+surveysystem("#"+active_survey+" #question_"+played_question+" .question_text").val()+'</div>';
@@ -492,7 +490,7 @@ function add_survey()
 			range: "min",
 			value: 12,
 			min: 0,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_line_height_value" ).val( "Line Height: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("line-height",ui.value + "px");
@@ -506,7 +504,7 @@ function add_survey()
 			range: "min",
 			value: 12,
 			min: 6,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_font_size_value" ).val( "Font Size: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("font-size",ui.value + "px");
@@ -520,7 +518,7 @@ function add_survey()
 			range: "min",
 			value: 10,
 			min: 0,
-			max: 1000,
+			max: 40,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_padding_value" ).val( "Padding: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("padding",ui.value + "px");
@@ -534,7 +532,7 @@ function add_survey()
 			range: "min",
 			value: 1,
 			min: 0,
-			max: 200,
+			max: 20,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_border_width_value" ).val( "Border Width: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border",ui.value+"px solid "+surveysystem("#"+survey_id+" .wp_sap_preview1003").css("background-color"));
@@ -548,7 +546,7 @@ function add_survey()
 			range: "min",
 			value: 5,
 			min: 0,
-			max: 200,
+			max: 100,
 			slide: function( event, ui ) {
 				surveysystem( "#"+survey_id+" .wp_sap_border_radius_value" ).val( "Border Radius: "+ui.value + "px" );
 				surveysystem("#survey .survey_element").css("border-radius",ui.value+"px "+ui.value+"px "+ui.value+"px "+ui.value+"px");
@@ -563,7 +561,7 @@ function add_survey()
 			step: 0.1,
 			value: 0.5,
 			min: 0.1,
-			max: 60,
+			max: 5,
 			slide: function( event, ui ) {
 			jQuery( "#"+survey_id+" .wp_sap_animation_speed_value" ).val( "Animation Speed: "+ui.value + "sec" );
 			}
