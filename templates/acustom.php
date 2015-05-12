@@ -3,7 +3,7 @@ print('
 <div class="pop-up-screen">
 	 <div class="pop-up-content">
 		<h3>Thank you...</h3>
-		<p>for downloading this plugin. WP Survey and Poll is a limited version, even you can reach many of custom features. If you really would like to get much more customization options, <br>purchase the <a target="_blank" href="http://pantherius.com/modal-survey">PRO version</a> for only a one-time fee: $17</p>
+		<p>for downloading this plugin. WP Survey and Poll is a limited version, even you can reach many of custom features. If you really would like to get much more customization options, <br>purchase the <a target="_blank" href="http://pantherius.com/modal-survey">PRO version</a> for only a one-time fee: $26</p>
 		<h4>Pro Version Features</h4>
 		<ul>
 			<li>- <strong>Unlimited</strong> Questions and Answers, Use <strong>Multiple Instances</strong> on the same page</li>
@@ -15,7 +15,7 @@ print('
 			<li>- Hide the bottom line \'Powered By\' text, Premium <strong>Support and Updates</strong></li>
 		</ul>
 		<a class="close button button-default" href="#">Use Free Version</a>
-		<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">Purchase PRO Version - $17</a>
+		<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">Purchase PRO Version - $26</a>
 	 </div>
 </div>
 <div class="overlay"></div>

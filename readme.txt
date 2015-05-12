@@ -101,14 +101,10 @@ Initial Release
 
 == Changelog ==
 
-= 1.2.6 =
+= 1.3 =
+* Improved styles, texts and user interface on admin
+* Updated admin informations
 * Increased questions and answers limits, improved style and texts on admin
-
-= 1.2.3 =
-* Improved Admin Area
-
-= 1.2.02 =
-* Improved Admin display
 
 = 1.2 =
 * Fixed SQL security issue
