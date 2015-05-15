@@ -163,7 +163,7 @@ if (survey.style=='flat') {jQuery('#survey').hide();/*played_question=0;setTimeo
 	else if (answers_number%3>0) {var separator = 3;different = answers_number%3;}
 	var counter = 0;
 	if (detectmob()==true) {separator = 1;differend = 0;}
-	var cr = '<div id="wpsapcr"><a href="https://wordpress.org/plugins/wp-survey-and-polls">Powered by WP Survey and Poll</a></div>';
+	var cr = '<div id="wpsapcr"><a href="https://wordpress.org/plugins/wp-survey-and-poll">Powered by WP Survey and Poll</a></div>';
 	for (key in survey.questions[played_question]) {
 		if (key!=0)
 		{
