@@ -12,7 +12,7 @@ print('
 			<li>- <strong>Import Survey</strong>, <strong>Duplicate</strong> Survey, Offer link at the end</li>
 			<li>- Allows <strong>Multiple Choices</strong> (required and choosable number of answers), Restrict to Logged-in users only</li>
 			<li>- Integrated <strong>Shortcode Manager</strong>, add survey or results shortcodes to text <strong>widget</strong></li>
-			<li>- Hide the bottom line \'Powered By\' text, Premium <strong>Support and Updates</strong></li>
+			<li>- <strong>MultiSite Support</strong>, Hide the bottom line \'Powered By\' text, Premium <strong>Support and Updates</strong></li>
 		</ul>
 		<a class="close button button-default" href="#">Use Free Version</a>
 		<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">Purchase PRO Version - $26</a>
