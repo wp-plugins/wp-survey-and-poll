@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) OR exit;
  * Plugin URI: http://pantherius.com/modal-survey
  * Description: Add simple surveys to your website
  * Author: Pantherius
- * Version: 1.3.05
+ * Version: 1.3.06
  * Author URI: http://pantherius.com
  */
  

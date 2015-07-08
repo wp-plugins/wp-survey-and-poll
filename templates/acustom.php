@@ -6,6 +6,7 @@ print('
 		<p>for downloading this plugin. WP Survey and Poll is a limited version, even you can reach many of custom features. If you really would like to get much more customization options, <br>purchase the <a target="_blank" href="http://pantherius.com/modal-survey">PRO version</a> for only a one-time fee: $26</p>
 		<h4>Pro Version Features</h4>
 		<ul>
+			<li>- Add score or mark answers as correct to <strong>create Quiz</strong>, add <strong>images</strong> to the questions and answers</li>
 			<li>- <strong>Unlimited</strong> Questions and Answers, Use <strong>Multiple Instances</strong> on the same page, <strong>Open Text</strong> Answers</li>
 			<li>- Display the Results with <strong>Plain Text</strong>, <strong>Progress Bar</strong>, <strong>Line Bar</strong>, <strong>Pie Chart</strong>, <strong>Bar Chart</strong>, <strong>Doughnut Chart</strong>, <strong>Line Chart</strong>, <strong>Polar Chart</strong> and <strong>Radar Chart</strong></li>
 			<li>- Export the survey to <strong>PDF</strong>, <strong>XML</strong>, <strong>CSV</strong>, <strong>XLS</strong> and <strong>JSON</strong></li>
