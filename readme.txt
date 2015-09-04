@@ -86,9 +86,21 @@ On your admin you can see the shortcode after you select the accordion of the su
 
 Yes, you can create unlimited surveys.
 
+= How to create a Quiz or Personality Test with scores? =
+
+It is a feature of the PRO version, you may take a look here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+
+= Can I embed the survey to the page / post? =
+
+Sure, simply add [survey id=12345 style="flat"] shortcode to your page / post and replace the 12345 numbers with the ID of your survey.
+
+= How to display the results on the frontend area? =
+
+You can display the results via charts or texts with the PRO Version. Find many of examples here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+
 = How many questions can I add? =
 
-Free version offers limited questions per survey, [unlimited questions is the feature of the PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+The plugin offers unlimited number of questions and answers, but it has a logical limits that doesn't slow down the website. Eg.: hundreds of questions and answers in the same survey doesn't look good and could be annoying for the visitors.
 
 = How can I export the survey? =
 
