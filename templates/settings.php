@@ -1639,7 +1639,6 @@
 	<p><strong>Closeable:</strong> The users can close the Survey by clicking on the imageDisplay at bottom(x) or on the transparent background.</p>
 	<p><strong>Display at bottom:</strong> The Survey animation is starting when the page is loaded by default. If you set this option to on, the Survey will appear when the user scrolled down to the bottom of the page.</p>
 	<h3>Adding a new question</h3>
-	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
 	Click on the [add new question] link and the new question immediately inserted. You can add as many as you want, but don't forget, too much question can make slower you website. The questions are <strong>sortable</strong>, so you can easily change the order.
 	You can delete the questions by clicking on the minus sign at the end of the question line. The first question can't be deleted.
 	<h3>Adding a new answer</h3>
