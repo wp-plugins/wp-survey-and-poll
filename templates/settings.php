@@ -1603,7 +1603,7 @@
 
 	</div>
 	<div id="manual">
-
+<p>If you have any questions or issues beyond the scope of this manual, <a target="_blank" href="https://wordpress.org/support/plugin/wp-survey-and-poll">please visit our Support Forum.</a></p>
 <section id="settings">
 	<div class="page-header"><h3>SETTINGS</h3><hr class="notop"></div>
 <p>
@@ -1643,7 +1643,6 @@
 	Click on the [add new question] link and the new question immediately inserted. You can add as many as you want, but don't forget, too much question can make slower you website. The questions are <strong>sortable</strong>, so you can easily change the order.
 	You can delete the questions by clicking on the minus sign at the end of the question line. The first question can't be deleted.
 	<h3>Adding a new answer</h3>
-	<p><strong>Free version offers 3 answers per question, unlimited answers is a feature of the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a>.</strong></p>
 	Click on the plus sign at the end of the second answer and the new answer immediately inserted. You can add as many as you want, of course depends on the visibility possibilities.(eg.: 40 answer doesn't look like good on the front side of your website).
 	You can delete the answers by clicking on the minus sign at the end of the actual answer line. The first and the second answers can't be deleted.
 	

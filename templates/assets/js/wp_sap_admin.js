@@ -297,20 +297,17 @@ jQuery(window).load(function() {
 	}	
 
  	surveysystem("body").on( "click", "#close_survey, #bglock",function() {
-		if (surveysystem('#'+active_survey+' .closeable').val()==1)	
-		{
 		if (surveysystem("#bglock").length>0&&(surveysystem("#bglock").css("display")=="block")&&surveysystem('#'+active_survey+' .lock_bg').val()==1) surveysystem("#bglock").fadeOut(1000,function(){surveysystem("#bglock").remove();});
 		if (surveysystem('#'+active_survey+' .display_style').val()=="bottom") {
-			surveysystem('#survey').animate({bottom: "-"+parseInt(surveysystem("#survey").height()+100)+"px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){})
+			surveysystem('#survey').animate({bottom: "-"+parseInt(surveysystem("#survey").height()+1000)+"px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){surveysystem('#survey').css("display","none");})
 		}
 		if (surveysystem('#'+active_survey+' .display_style').val()=="center") {
-			surveysystem('#survey').animate({left: "-5000px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){});
+			surveysystem('#survey').animate({left: "-5000px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){surveysystem('#survey').css("display","none");});
 		}
 		if (surveysystem('#'+active_survey+' .display_style').val()=="top") {
-			surveysystem('#survey').animate({top: "-"+parseInt(surveysystem("#survey").height()+100)+"px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){})
+			surveysystem('#survey').animate({top: "-"+parseInt(surveysystem("#survey").height()+1000)+"px"}, parseInt(surveysystem('#'+active_survey+' .wp_sap_animation_speed_value').val().replace("Animation Speed: ","").replace("sec","")*1000), surveysystem('#'+active_survey+' .animation_easing').val(),function(){surveysystem('#survey').css("display","none");})
 		}
 		played_question = 0;
-		}
 	});
 	
  	surveysystem("body").on( "click", ".survey_answers",function() {
@@ -327,6 +324,7 @@ jQuery(window).load(function() {
 	{
 	var survey_content = "";
 	var remove_image = "";
+	surveysystem('#survey').css("display","block");
 	if ((surveysystem("#"+active_survey+" #question_"+played_question).length>0)||((surveysystem("#"+active_survey+" #new_questions .one_question").length)<played_question+1))
 	{
 	surveysystem("#survey").css("top","");
@@ -574,7 +572,7 @@ function add_survey()
 			else
 			{
 				if (!surveysystem("link[href='http://fonts.googleapis.com/css?family="+surveysystem(this).val()+"']").length) surveysystem('head').append('<link rel="stylesheet" href="http://fonts.googleapis.com/css?family='+surveysystem(this).val()+'" type="text/css" />');
-				if (surveysystem("#survey").length!=0) surveysystem("#survey").css("font-family",surveysystem(this).val()+", serif");
+				if (surveysystem("#survey").length!=0) surveysystem("#survey, .survey_element").css("font-family",surveysystem(this).val()+", serif");
 			}
 		});
 		
@@ -710,7 +708,6 @@ function initialize_question_accordions(survey_id)
 	var answer_area = surveysystem(this).parent().parent().attr("id");
 	var question_num = surveysystem(this).parent().parent().parent().attr("id").replace("question_","");
 	var answer_num = surveysystem("#"+answer_area.replace("answers_","")+" #question_"+question_num+" .answer").length+1;
-	if (answer_num==4) {surveysystem( "#dialog-confirm4" ).dialog( "open" );return true;}
 	surveysystem("#"+answer_area.replace("answers_","")+" #question_"+question_num).append('<p class="added_answers" id="answer_element_'+answer_area.replace("answers_","")+'_'+answer_num+'"><span>'+answer_num+'.</span> answer: <input type="text" id="answer'+answer_num+'" name="answer[]" class="answer" value="" /><span id="answer_count'+answer_num+'" class="answer_count">0 - 0%</span><a class="remove_answer" id="remove_'+answer_area+'_'+answer_num+'"><img class="wp_sap_tooltip" title="Remove Answer" src="'+sspa_params.plugin_url+'/templates/assets/img/delete.png"></a></p>');
 	create_graph(answer_area.replace("answers_",""),question_num);
 	initialize_tooltips();

@@ -2,10 +2,10 @@
 defined( 'ABSPATH' ) OR exit;
 /**
  * Plugin Name: WordPress Survey and Poll
- * Plugin URI: http://pantherius.com/modal-survey
+ * Plugin URI: http://modalsurvey.pantherius.com
  * Description: Add simple surveys to your website
  * Author: Pantherius
- * Version: 1.3.06
+ * Version: 1.3.3
  * Author URI: http://pantherius.com
  */
  
@@ -116,7 +116,7 @@ if(!class_exists('wp_sap'))
 			$wpdb->query("DROP TABLE IF EXISTS ".$wpdb->prefix.'wp_sap_questions');
 			$wpdb->query("DROP TABLE IF EXISTS ".$wpdb->prefix.'wp_sap_answers');
 		}
-			
+
 		function random_color() {
 			return '#' . str_pad(dechex(mt_rand(0, 0xFFFFFF)), 6, '0', STR_PAD_LEFT);
 		}

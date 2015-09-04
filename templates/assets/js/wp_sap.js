@@ -179,7 +179,7 @@ if (survey.style=='flat') {jQuery('#survey').hide();/*played_question=0;setTimeo
 	else {survey_content += '<div class="survey_table"><div class="survey_element survey_question">'+survey_options[12].replace(/[|]/gi,"'")+'</div></div>';}
 	if (jQuery('#'+survey.survey_id+' #question_'+played_question+' .answer').length<3) survey_content += '</div>';
 	jQuery("#survey").html(survey_content);
-	jQuery("#survey").append(cr);
+	//jQuery("#survey").append(cr);
 	
 	//make the style
 	var bgs = survey_options[3].split(";");
