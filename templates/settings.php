@@ -10,12 +10,15 @@
 		<p><strong><?php print($this->action_result);?></strong></p>
 	</div>
 	<?php }*/?>
+	<div class="help_link">
+		<div class="ms-wizard heartbeat" data-step="1" data-tutorial="survey-form">Tutorial</div>
+	</div>
 	<div id="wp_sap_tabs">
 		<ul>
 			<li><a href="#wp_sap_settings">Surveys</a></li>
 			<li><a href="#proversion">Pro Version</a></li>
 			<li><a href="#plugin_directory">Plugin Directory</a></li>
-			<li><a href="#manual">Help</a></li>
+			<li><a href="#manual" class="manual">Help</a></li>
 		</ul>
 	<div id="gradX" ></div>
 	<div id="wp_sap_settings">
@@ -790,7 +793,7 @@
 					if ($sv->expiry_time!='0000-00-00 00:00:00') $thisexpiry_time = $this->get_date_datetime($sv->expiry_time);
 					else $thisexpiry_time = $sv->expiry_time;
 				print('<h3 class="header_'.$sv->id.'">'.$sv->name.'</h3>
-	  <div id="'.$sv->id.'"><a style="float:right;font-size: 12px;">Shortcode: [survey id='.$sv->id.']</a>
+	  <div id="'.$sv->id.'"><div class="shortcode_section" style="float:right;font-size: 12px;">Shortcode: [survey id='.$sv->id.']</div>
 			<fieldset>
 			<legend>Survey Options</legend>
 			<div class="text">Start time: <input type="text" name="start_time" class="datepicker inputtext start_time wp_sap_tooltip" title="Leave it blank to activate the survey immediately" value="'.str_replace("0000-00-00 00:00:00","",$thisstart_time).'" /></div>

@@ -8,6 +8,23 @@
 	background: #fff !important;
 }
 
+.help_link {
+	position: absolute;
+    right: 20px;
+    top: 35px;
+}
+
+.help_link a {
+	padding: 5px 10px 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #42CC6C;
+    color: #080808;
+    margin-right: 10px;
+}
+
 .settings_page_wp_sap .wrap hr { 
 	border: 0; 
 	height: 1px; 

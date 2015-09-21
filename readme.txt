@@ -3,7 +3,7 @@ Contributors: Pantherius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6H6YHMQG8JJ5J&lc=USD&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: poll, survey, questionnaire, quiz, opinion, customer satisfaction, feedback, survey form, poll builder, marketing, questions, answers, polling, quizzes, data collection
 Requires at least: 3.9.0
-Tested up to: 4.3
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -112,6 +112,9 @@ You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](
 Initial Release
 
 == Changelog ==
+
+= 1.4 =
+* Added Interactive Tutorial to Admin
 
 = 1.3 =
 * Improved styles, texts and user interface on admin

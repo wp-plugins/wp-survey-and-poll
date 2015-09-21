@@ -27,6 +27,7 @@ if(!class_exists('wp_sap_settings'))
 		function enqueue_admin_custom_scripts_and_styles() {
 			wp_enqueue_style('wp_sap_style', plugins_url( '/templates/assets/css/wp_sap_settings.css' , __FILE__ ));
 			wp_enqueue_style('jquery_ui_style', plugins_url( '/templates/assets/css/jquery-ui.css' , __FILE__ ));
+			wp_enqueue_style('wp_sap_wizard_script', plugins_url( '/templates/assets/css/wp_sap_wizard.css' , __FILE__ ));
 			wp_enqueue_style('wp_sap_colorpicker_style', plugins_url( '/templates/assets/css/colorpicker.css' , __FILE__ ));
 			wp_enqueue_style('wp_sap_gradx_style', plugins_url( '/templates/assets/css/gradX.css' , __FILE__ ));
 			wp_enqueue_script('jquery');
@@ -52,6 +53,7 @@ if(!class_exists('wp_sap_settings'))
 			wp_localize_script( 'wp_sap_admin', 'sspa_params', array( 'plugin_url'=>plugins_url( '' , __FILE__ ), 'admin_url'=>admin_url( 'admin-ajax.php')));
 			wp_enqueue_script( 'wp_sap_admin' );
 			wp_enqueue_script('wsap_acustom', plugins_url( '/templates/assets/js/acustom.js' , __FILE__ ) , array('jquery'),'100017', true);
+			wp_enqueue_script('wp_sap_wizard_script', plugins_url('/templates/assets/js/wp_sap_wizard.js' , __FILE__ ), array( 'jquery','jquery-ui-core-wsap' ), '1.0.0.3' );
 		}
 		/**
 		* initialize datas on wp admin

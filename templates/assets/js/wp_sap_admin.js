@@ -465,7 +465,7 @@ function add_survey()
 		surveysystem( "#wp_sap_accordion" ).accordion({ active: 0 });
 		surveysystem("#"+survey_id+" .question_text").attr("id","question_"+survey_id);
 		surveysystem("#"+survey_id+" .question_text").val(surveysystem("#survey_name").val());
-		surveysystem("#"+survey_id).prepend('<a style="float:right;font-size: 12px;">Shortcode: [survey id='+survey_id+']</a>');
+		surveysystem("#"+survey_id).prepend('<div class="shortcode_section" style="float:right;font-size: 12px;">Shortcode: [survey id='+survey_id+']</div>');
 		surveysystem("#new_survey_content").find("span").attr("id","");
 		surveysystem("#survey_name").val("");
 		surveysystem("#"+survey_id+" .right_half").html('<canvas id="wp_sap_pro_graph_'+survey_id+'_1" class="canvas_graph" height="250" width="250"></canvas>');
@@ -990,8 +990,10 @@ function create_graph(survey_id,question_id)
 		surveysystem(".wp_sap_tooltip").tooltip({
 			  content: function () {
 				  return jQuery(this).prop('title');
-			  }
-		  });	
+			  },
+			show: { effect: "drop", duration: 300 },
+			hide: { effect: "drop", duration: 100 },
+			});	
 	}
 
 	function get_random_color() {
