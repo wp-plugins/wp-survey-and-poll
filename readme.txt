@@ -12,7 +12,7 @@ WordPress Survey and Poll offers unique solution to get your visitors' feedbacks
 
 == Description ==
 
-[Demo](http://modalsurvey.pantherius.com) | [Pro Version - Modal Survey](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
+[Demo](http://modalsurvey.pantherius.com) | [Pro Version - Modal Survey](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius) | [WordPress & Jquery Plugins](http://innovativeplugins.com)
 
  The surveys are deeply customizable, RGB color picker helps to create the design of the survey just as you imagined. The polls can automatically open as a modal window or it is possible to display it with clicking on a link or embed the survey to any page or post with shortcodes.
  Users' feedbacks are really important to make you WordPress website enjoyable for your visitors. WordPress Survey and Poll Plugin provides a wide variety of options to get any informations and display it with an impressive, animated graph. All polls are anonymous, doesn't need to log in to fill out, therefore the plugin using cookies to avoid duplications.
@@ -88,7 +88,7 @@ Yes, you can create unlimited surveys.
 
 = How to create a Quiz or Personality Test with scores? =
 
-It is a feature of the PRO version, you may take a look here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+It is a feature of the PRO version, you may take a look here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
 
 = Can I embed the survey to the page / post? =
 
@@ -96,7 +96,7 @@ Sure, simply add [survey id=12345 style="flat"] shortcode to your page / post an
 
 = How to display the results on the frontend area? =
 
-You can display the results via charts or texts with the PRO Version. Find many of examples here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+You can display the results via charts or texts with the PRO Version. Find many of examples here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
 
 = How many questions can I add? =
 
@@ -104,7 +104,7 @@ The plugin offers unlimited number of questions and answers, but it has a logica
 
 = How can I export the survey? =
 
-You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
 
 == Upgrade Notice ==
 
@@ -112,6 +112,9 @@ You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](
 Initial Release
 
 == Changelog ==
+
+= 1.4.1 =
+* Fixed minor bug in Survey Wizard on admin with FireFox
 
 = 1.4 =
 * Added Interactive Tutorial to Admin

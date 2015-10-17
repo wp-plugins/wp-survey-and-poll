@@ -871,7 +871,7 @@ function initialize_question_accordions(survey_id)
         },
         "Purchase Now": function() {
 		window.open(
-		  'http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius',
+		  'http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius',
 		  '_blank'
 		);
         }
@@ -889,7 +889,7 @@ function initialize_question_accordions(survey_id)
         },
         "Purchase Now": function() {
 		window.open(
-		  'http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius',
+		  'http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius',
 		  '_blank'
 		);
         }

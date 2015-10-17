@@ -1564,7 +1564,7 @@
 			<h3 style="text-align: center;">Modal Survey - WordPress Feedbacks & Polls Plugin<br /><hr /></h3>
 			<div style="width: 590px;display: inline-block;vertical-align: top;">
 			<p style="text-align: center; display: inline-block;">
-			<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img src="http://static.pantherius.com/modal-survey/preview.jpg"></a>
+			<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius"><img src="http://static.pantherius.com/modal-survey/preview.jpg"></a>
 			</p>
 			<div style="display: inline-block">
 			<h3 style="text-align: center;">Key Features</h3>
@@ -1590,11 +1590,11 @@
 				<li>display the surveys only when the users scrolled down to the bottom of the page</li>
 				<li>full detailed documentation</li>
 			</ul>
-			<a target="_blank" class="button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PURCHASE PRO VERSION</a>
+			<a target="_blank" class="button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">PURCHASE PRO VERSION</a>
 			</div>
 			</div>
 			<div style="display:inline-block;width: 400px;">
-				<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius"><img style="width:100%;" src="http://static.pantherius.com/modal-survey/cc_promo_image.png"></a>
+				<a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius"><img style="width:100%;" src="http://static.pantherius.com/modal-survey/cc_promo_image.png"></a>
 			</div>
 	</div>
 	<div id="plugin_directory">
@@ -1677,21 +1677,21 @@
 	The place, where you insert this shortcode is very important, because the Survey will appear on that place when the user scrolled down and reach that point.	
 	
 	<h3>Result shortcodes - Display the full Survey's results with Progress Bar</h3>
-	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
+	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
 	To insert the full Survey results to the page, just use the following shortcode:
 	<pre class="html"><strong>[survey_answers id=121234344]</strong></pre>
 	The place, where you insert this shortcode is very important, because the Survey will appear on that place when the user scrolled down and reach that point.
 	You can use a several parameters to customize.
 
 	<h3>Result shortcodes - Display Survey's specified question results with Progress Bar</h3>
-	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
+	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
 	To insert the Survey's specified question's results to the page, just use the following shortcode:
 	<pre class="html"><strong>[survey_answers id=121234344 qid=1 data=question]</strong></pre>
 	This is the first question of the Survey with id:121234344
 	You have to define the data=question parameter and the number of the question.
 	
 	<h4>Customization</h4>
-	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
+	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
 	If you would like to hide the exact number of votes, use the hidecounter=yes parameter, like this:
 	<pre class="html"><strong>[survey_answers id=121234344 hidecounter=yes]</strong></pre>
 	It is possible to specify the background and the font colors (in text or HEX format):
@@ -1700,7 +1700,7 @@
 	<pre class="html"><strong>[survey_answers id=121234344 hidecounter=yes bgcolor=random color=random]</strong></pre>
 
 	<h3>Result shortcodes - Get the questions and answers in plain text format</h3>
-	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
+	<p><strong>This feature is available in the <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">PRO version</a> only.</strong></p>
 	You can use the results in articles with the exact parameters of the questions or answers.
 	You can get the question with this shortcode:
 	<pre class="html"><strong>[survey_answers id=121234344 qid=1 style=plain data=question]</strong></pre>
@@ -1725,10 +1725,10 @@
   <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>The answer counts will be permanently deleted and cannot be recovered. Are you sure to reset?</p>
 </div>
 	<div id="dialog-confirm3" title="Unlimited Questions?">
-  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to two questions per survey. To add unlimited questions, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to two questions per survey. To add unlimited questions, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
 </div>
 	<div id="dialog-confirm4" title="Unlimited Answers?">
-  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to three answers per question. To add unlimited answers, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Free version limited to three answers per question. To add unlimited answers, please <a target="_blank" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">purchase the PRO version here.</a> <br><br>Please don't forget to remove the free version before you install the PRO.</p>
 </div>
 </div>
 <div id="survey" style="position: fixed;left:0px;z-index: 999999;width:98%;padding:1%;"></div>

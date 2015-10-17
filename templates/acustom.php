@@ -31,7 +31,7 @@ else {
 				<li>- <strong>MultiSite Support</strong>, Localizable, Premium <strong>Support and Updates</strong></li>
 			</ul>
 			<a class="close button button-default" href="#">Use Free Version</a>
-			<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius">Purchase PRO Version - $27</a>
+			<a class="close button button-primary" href="http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius">Purchase PRO Version - $27</a>
 		 </div>
 	</div>
 	<div class="overlay"></div>

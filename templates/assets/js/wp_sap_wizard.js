@@ -67,7 +67,7 @@ jQuery( window ).load( function () {
 			jQuery( "#wp_sap_accordion .play_button img:first" ).attr( "data-title", "<p>Try out your survey with the play button, this mode doesn't save the votes.</p><div class='wizard-controls'><a href='#' class='ms-wizard-close button button-secondary button-small'>Close</a><a href='#' class='ms-wizard button button-secondary button-small' data-step='9'>Back</a><a href='#' class='ms-wizard button button-secondary button-small' data-step='11'>Next</a></div>" );
 			
 			jQuery( ".manual" ).addClass( "tooltip-wizard wizard-step11" );
-			jQuery( ".manual" ).attr( "data-title", "<p>If you still have questions, read more informations in the help section. High ratings are very important to motivate us releasing new features, please rate the plugin if you like it! Pro version provides tons of new fetures, click on the Go Pro button to read more details.</p><div class='wizard-controls'><a href='#' class='ms-wizard-close button button-secondary button-small'>Close</a><a target='_blank' href='https://wordpress.org/support/plugin/wp-survey-and-poll' class='button button-secondary button-small'>Support</a><a target='_blank' href='https://wordpress.org/support/view/plugin-reviews/wp-survey-and-poll?rate=5#postform' class='button button-secondary button-small'>Rate</a><a target='_blank' href='http://codecanyon.net/item/modal-survey-wordpress-feedbacks-polls-plugin/6533863?ref=pantherius' style='width: 90%;margin-top: 5px;' class='button button-primary button-small'>Go Pro</a></div>" );
+			jQuery( ".manual" ).attr( "data-title", "<p>If you still have questions, read more informations in the help section. High ratings are very important to motivate us releasing new features, please rate the plugin if you like it! Pro version provides tons of new fetures, click on the Go Pro button to read more details.</p><div class='wizard-controls'><a href='#' class='ms-wizard-close button button-secondary button-small'>Close</a><a target='_blank' href='https://wordpress.org/support/plugin/wp-survey-and-poll' class='button button-secondary button-small'>Support</a><a target='_blank' href='https://wordpress.org/support/view/plugin-reviews/wp-survey-and-poll?rate=5#postform' class='button button-secondary button-small'>Rate</a><a target='_blank' href='http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius' style='width: 90%;margin-top: 5px;' class='button button-primary button-small'>Go Pro</a></div>" );
 		}
 		jQuery( ".tooltip-wizard" ).tooltipX({
 			content: function () {
@@ -99,7 +99,7 @@ jQuery( window ).load( function () {
 				jQuery( ".ms_accordion_more_api h4" ).trigger( "click" );
 			}
 	})
-	jQuery( document ).on( "click", ".ms-wizard", function() {
+	jQuery( document ).on( "click", ".ms-wizard", function(event) {
 		event.preventDefault();
 		var thiselem = jQuery( this );
 		var step = thiselem.attr( "data-step" );
