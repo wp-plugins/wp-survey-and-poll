@@ -88,7 +88,7 @@ Yes, you can create unlimited surveys.
 
 = How to create a Quiz or Personality Test with scores? =
 
-It is a feature of the PRO version, you may take a look here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+It is a feature of the PRO version, you may take a look here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey, Quiz and Poll for WordPress")
 
 = Can I embed the survey to the page / post? =
 
@@ -96,7 +96,7 @@ Sure, simply add [survey id=12345 style="flat"] shortcode to your page / post an
 
 = How to display the results on the frontend area? =
 
-You can display the results via charts or texts with the PRO Version. Find many of examples here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress")
+You can display the results via charts or texts with the PRO Version. Find many of examples here: [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey, Quiz and Poll for WordPress")
 
 = How many questions can I add? =
 
@@ -104,7 +104,7 @@ The plugin offers unlimited number of questions and answers, but it has a logica
 
 = How can I export the survey? =
 
-You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey for WordPress").
+You can export the survey to PDF, XML, JSON, CSV and XLS with the [PRO version](http://codecanyon.net/item/modal-survey-wordpress-poll-survey-quiz-plugin/6533863?ref=pantherius "Modal Survey, Quiz and Poll for WordPress").
 
 == Upgrade Notice ==
 
